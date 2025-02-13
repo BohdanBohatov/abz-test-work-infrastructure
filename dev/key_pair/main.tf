@@ -1,4 +1,4 @@
-module "vpc" {
+module "ssh_key_pair" {
   source = "../../modules/key_pair"
 
   env      = "dev"
