@@ -15,6 +15,6 @@ data "terraform_remote_state" "key_pair" {
 data "terraform_remote_state" "ec2_security_group" {
   backend = "local"
   config = {
-    path = "../ec2_security_groups/terraform.tfstate"
+    path = "../security_groups/ec2_security_groups/terraform.tfstate"
   }
 }
