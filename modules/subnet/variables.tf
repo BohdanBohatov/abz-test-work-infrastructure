@@ -8,6 +8,11 @@ variable "vpc_id" {
   type        = string
 }
 
+variable "vpc_cidr_block" {
+  description = "VPC cidr block."
+  type        = string
+}
+
 variable "availability_zone_1" {
   description = "Avaliability zone for first subnet."
   type        = string

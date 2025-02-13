@@ -8,4 +8,5 @@ module "vpc_subnet" {
   cidr_block_private_subnet_2 = "10.0.8.0/22"
   cidr_block_public_subnet_1  = "10.0.4.0/22"
   cidr_block_public_subnet_2  = "10.0.12.0/22"
+  vpc_cidr_block              = data.terraform_remote_state.vpc.outputs.vpc_cidr_block
 }
