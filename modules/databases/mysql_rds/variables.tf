@@ -43,12 +43,12 @@ variable "security_group_id" {
   type        = string
 }
 
-variable "db_subnet_group_name" {
-  description = "Subnet for MySql."
-  type        = string
-}
-
 variable "skip_final_snapshot" {
   description = "Does MySql need final snapshot."
   type        = bool
+}
+
+variable "private_subnet_ids" {
+  description = "Private subnets ids."
+  type        = list(string)
 }
