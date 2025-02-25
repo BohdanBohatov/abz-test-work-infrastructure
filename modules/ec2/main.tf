@@ -4,6 +4,7 @@ resource "aws_instance" "word_press_instance" {
   subnet_id              = var.subnet_id
   vpc_security_group_ids = [var.security_group]
   key_name               = var.key_name
+  iam_instance_profile   = var.iam_instance_profile
 
   tags = {
     "Name" = "${var.env}-WordPress-instance"

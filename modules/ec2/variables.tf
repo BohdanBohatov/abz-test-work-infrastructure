@@ -21,3 +21,7 @@ variable "security_group" {
 variable "key_name" {
   description = "SSH key name."
 }
+
+variable "iam_instance_profile" {
+  description = "EC2 profile role."
+}
