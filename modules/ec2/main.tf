@@ -5,8 +5,13 @@ resource "aws_instance" "word_press_instance" {
   vpc_security_group_ids = [var.security_group]
   key_name               = var.key_name
   iam_instance_profile   = var.iam_instance_profile
+  user_data              = var.user_data
 
+  #If change the instance tag's - change CodeDeploy deploy instances selection
   tags = {
     "Name" = "${var.env}-WordPress-instance"
+    "Environment"  = var.env
+    "Type" = "${var.env}-wordpress"
+    "ManagedBy" = "Terraform"
   }
 }
