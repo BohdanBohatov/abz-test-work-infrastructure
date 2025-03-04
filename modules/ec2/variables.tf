@@ -25,7 +25,3 @@ variable "key_name" {
 variable "iam_instance_profile" {
   description = "EC2 profile role."
 }
-
-variable "user_data" {
-  description = "User data."
-}
