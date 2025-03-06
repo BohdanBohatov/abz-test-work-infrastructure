@@ -32,7 +32,8 @@ resource "aws_iam_policy" "secrets_manager_policy" {
           "secretsmanager:DescribeSecret"
         ]
         Resource = [
-          "${var.mysql_secret_arn}*"
+          "${var.mysql_secret_arn}*",
+          "${var.wordpress_secret_arn}*"
         ]
       }
     ]
