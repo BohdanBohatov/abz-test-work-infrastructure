@@ -7,7 +7,7 @@ module "mysql_rds" {
   instance_type       = "db.t4g.micro"
   allocated_storage   = 20
   storage_type        = "gp3"
-  db_name             = "testdb"
+  db_name             = "wordpressdb"
   db_username         = "mysqladmin"
   security_group_id   = data.terraform_remote_state.mysql_security_group.outputs.mysql_security_group_id
   skip_final_snapshot = true
