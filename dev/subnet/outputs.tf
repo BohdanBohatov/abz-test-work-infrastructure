@@ -17,3 +17,13 @@ output "private_subnet_2_id" {
   description = "2st private subnet id."
   value       = module.vpc_subnet.private_subnet_2_id
 }
+
+output "private_nat_subnet_1_id" {
+  description = "1st private subnet id."
+  value       = module.vpc_subnet.private_nat_subnet_1_id
+}
+
+output "private_nat_subnet_2_id" {
+  description = "2st private subnet id."
+  value       = module.vpc_subnet.private_nat_subnet_2_id
+}

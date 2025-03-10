@@ -43,4 +43,14 @@ variable "cidr_block_public_subnet_2" {
   type        = string
 }
 
+variable "cidr_block_private_nat_subnet_1" {
+  description = "CIDR block for first private subnet."
+  type        = string
+}
+
+variable "cidr_block_private_nat_subnet_2" {
+  description = "CIDR block for second private subnet."
+  type        = string
+}
+
 
